@@ -62,9 +62,8 @@ kakao.maps.event.addListener(map, 'click', function(mouseEvent){
       console.log(marker_count + '번째 마커의 ' + '(' + input + ')' + '위도 ' + latlng.getLat() + ' 경도 ' + latlng.getLng() + ' 입니다.');
 
       for(let co in customOverlayList){
-        let latlng = customOverlayList[co].getPosition();
-        console.log(`${co} : (${latlng.latitude}, ${latlng.longitude})`);
-    }
+        console.log(`${co} : ${customOverlayList[co].getPosition()}`);
+      }
 
       cmarker.setMap(map);
 
