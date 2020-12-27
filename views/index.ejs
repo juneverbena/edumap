@@ -13,12 +13,14 @@
       </button>
       <h1 id="nav_title"><%= title %></h1>
     </div>
-    <div id="infoBox">
-      <div id="infoTitle">현재 시각</div>
-      <div id="infoDate"></div>
-      <div id="infoTime"></div>
-    </div>
+
+    <button id="showLevel" class="btn showlevel" onclick="displayLevel()">지금 지도의 레벨은?</button>
     
+    <div class="setlevel">
+      <input id="ip_setLevel" class="ip" placeholder="원하는 레벨 입력">
+      <button id="btn_setLevel" class="btn" onclick="mysetLevel()">입력</button>
+    </div>
+
     <!--사이드바-->
     <div id="mysideMenu" class="sideMenu">
       <a href="#" class="closebtn" onclick='closeMenu()'>
@@ -56,6 +58,7 @@
       map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 
 
+      
     </script>
     
     <script type="text/javascript" src="javascripts/onclick.js"></script>
