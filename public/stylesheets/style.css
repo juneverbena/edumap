@@ -3,6 +3,31 @@ body {
   margin: 0px !important;
 }
 
+#showLevel {
+  position: absolute;
+  top: 100px;
+  z-index: 10000;
+  background: white;
+  left: 20px;
+  padding: 15px;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.setlevel {
+  position: absolute;
+  top: 200px;
+  z-index: 10000;
+  background: white;
+  left: 20px;
+  padding: 15px;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 4px;
+  text-align: center;
+  display: inline-block;
+}
+
 .navbar {
   width: 100vw;
   height: 50px;
@@ -24,7 +49,7 @@ body {
 
 .nav_menu{
   margin: 10px;
-  width: 4vw;
+  width: 30px;
   height: 30px;
   background: #0B3861;
   align-items: left;
@@ -51,7 +76,7 @@ body {
   padding-top: 60px;
 }
 .sideMenu a {
-  margin: 15px;
+  margin: 5px;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 20px;
