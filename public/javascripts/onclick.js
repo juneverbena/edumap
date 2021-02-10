@@ -4,7 +4,6 @@ function openMenu() {
 function closeMenu() {
     document.getElementById('mysideMenu').style.width = '0';
 }
-
 function displayLevel(){
     console.log('현재 레벨은 ' + map.getLevel() + ' 입니다. ');
 }
